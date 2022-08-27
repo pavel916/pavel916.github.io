@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('fonts/TTLakes-Regular.eot');
+    src: url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/TTLakes-Regular.woff') format('woff'),
+    url('fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'TT Lakes Medium';
+        src: url('fonts/TTLakes-Medium.eot');
+        src: url('fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Medium.woff') format('woff'),
+        url('TTLakes-Medium.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'TT Lakes Bold';
+            src: url('fonts/TTLakes-Bold.eot');
+            src: url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+            url('fonts/TTLakes-Bold.woff') format('woff'),
+            url('TTLakes-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            }
+
+*, *:before, *:after {
+box-sizing: border-box;
+} 
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    max-width: 1120px;
+    background: #F2F2F2;
+
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+    padding: 20px;
+    font-family: 'TT Lakes Medium';
+    font-weight: normal;
+}
+
+.swiper {
+    display: flex;
+    flex-wrap: wrap;
+    direction: row;
+    /* flex: 1 1 auto; */
+    max-width: 100%;
+    height: 100%;
+    /* min-width: 0; */
+}
+
+.swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 16px;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 16px;
+    margin: 0 0 32px;
+
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+    max-width: 240px;
+    margin: 10px;
+    height: 80px;
+    background-color: white;
+
+}
+
+.swiper-pagination-bullets > span {
+    width: 12px;
+    height: 12px;
+    background-color: #d2cece;
+}
+
+
+.img-hover:hover {
+    /* box-shadow: 0px 0px 5px 5px red; */
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+
+.btn-none {
+    background: url('img_1.5/icon.svg')no-repeat 0 3px;
+    position: relative;
+    left: 35px;
+    top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    padding: 2px;
+
+}
+
+.btn-close {
+    background: url('img_1.5/ic/expand.svg')no-repeat 0 -3px;
+    position: relative;
+    left: 35px;
+    top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    padding: 2px;
+}
+
+
+
+a {
+    margin-right: 16px;
+    margin-left: auto;
+    position: relative;
+}
+
+img {
+    margin-left: 16px;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .swiper-wrapper {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+}
+   
+    
+
+    
+    .btn-none {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        .btn-none {
+            display: inline-block;
+        }
+    }
+
+    .block__close{
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: 16px;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 16px;
+        margin: 0 0 32px;
+        width: 100%;
+        height: 100px;
+        display: none;
+    }
+
+     .item-9,
+     .item-10 {
+        display: flex;
+        align-items: center;
+        border: 1px solid #EAEAEA;
+        max-width: 240px;
+        margin: 10px;
+        height: 80px;
+        background-color: white;
+     }
+
+     .button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid  #FF3E79;
+        background-color: #FFFFFF;
+        margin-left: auto;
+        padding: 0;
+        margin-right: 15px;
+        cursor: pointer;
+     }
+
+     .button:hover{
+        transform: scale(1.2);
+        transition-duration: 1s;
+     }
+
+     .button__scale2 {
+        border: solid #FF3E79;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        margin-left: 12px;
+        margin-top: 14px;
+        transform: rotate(-45deg);
+        cursor: pointer;
+     }
+ 
+
+     @media (min-width: 768px) {
+        .item-7,
+        .item-8 {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1100px) {
+        .item-7,
+        .item-8 {
+            display: flex;
+        }
+    }
