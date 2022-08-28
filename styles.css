@@ -218,23 +218,35 @@ a {
     margin: 0 0 15px;
 }
 
-.btn{
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    letter-spacing: -0.2px;
-    padding: 0 0 0 20px;
-    background: url(img/ic/icon.svg)no-repeat 0 6px;
-    width: 10px;
+.btn__conteinrEvery {
+    width: 130px;
     margin-bottom: 20px;
 }
 
-.btn__span {
-    display: inline-block;
-    width: 100px;
-    font-family: 'TT Lakes Medium';
+
+
+.btn-none3 {
+    position: relative;
+    /* display: block; */
+    background: none;
+    /* left: 35px;
+    top: 20px; */
+    /* margin-bottom: 33px; */
+    /* margin-left: -28px; */
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    padding: 2px; 
+}
+
+.btn-none3::before {
+    content: "";
+    background: url(img/ic/icon.svg)no-repeat;
+    position: absolute;
+    left: 0;
+    width: 12px;
+    height: 12px;
+
 }
 
 .main__sevice-menu--item2:hover {
@@ -316,10 +328,10 @@ a {
     display: none;
 }
 
-.btn {
+/* .btn {
     width: 10px;
     margin-bottom: 20px;
-}
+} */
 
 
 
@@ -352,13 +364,13 @@ a {
     }
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .btn {
         position: absolute;
         margin: 125px 0 0px 13px;
         
     }
-}
+} */
 
 @media screen and (min-width: 1120px) {
     .main__container {
