@@ -209,6 +209,10 @@ a {
   flex-direction: column;
 }
 
+.main_conteiner-text {
+    margin-right: 20px;
+}
+
 .main__content-text {
     
     line-height: 1.3;
@@ -221,6 +225,8 @@ a {
 .btn__conteinrEvery {
     width: 130px;
     margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 
